@@ -9,3 +9,4 @@ node_modules/
 cloudinary_python.txt
 kaggle.json
 .venv/
+raw_data_household_power_consumption.txt
