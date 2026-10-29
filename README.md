@@ -1,75 +1,145 @@
+# Energy Consumption and Forecasting
+
+Energy Consumption and Forecasting is a data analytics project that aims to explore electricity consumption patterns, identify periods of high usage and investigate how historical electricity data can help predict future consumption. The project will use data analysis and visualisation techniques to communicate findings and support a better understanding of energy usage.
+
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
+## Dataset Content
 
-Welcome,
+- The project will use the "Electric Power Consumption Dataset" (https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set).
 
-This is the Code Institute student template for the three Data Analytics capstone projects. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+- The dataset contains household electricity consumption measurements recorded over time.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+- The team will inspect the dataset to understand its structure, variables, date range and data quality before beginning the analysis.
 
-If you are working on the first capstone project, you can also delete `.python-version`, `.slugignore`, `Procfile` and `setup.sh` as they are only required for later dashboard projects. 
+- The dataset will be used to explore electricity usage patterns and investigate whether historical measurements can support forecasting future consumption.
 
-## How to use this repo
+## Business Requirements
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+The aim of this project is to analyse electricity consumption data and identify patterns that can improve understanding of energy usage.
 
-1. Copy the URL of your repository to your clipboard.
+The project aims to:
 
-1. In VS Code, select **File** -> **Open Folder**.
+1. Analyse electricity consumption patterns over time.
+2. Identify periods of high or changing electricity consumption.
+3. Explore trends in the available measurements.
+4. Investigate whether historical data can support forecasting future electricity consumption.
+5. Present findings through clear data visualisations and, if feasible, an interactive dashboard.
+6. Provide evidence-based recommendations based on the findings.
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+## Hypothesis and how to validate?
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open a new terminal.
+The team will investigate the following hypotheses:
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+- Electricity consumption changes over time and may show identifiable patterns.
+- Some periods have higher electricity consumption than others.
+- Historical electricity consumption data may help identify trends that can support future forecasting.
 
-1. In VS Code, select **File** > **Open Folder** again.
+The hypotheses will be investigated using data exploration, descriptive statistics and suitable visualisations. If forecasting is implemented, the team will evaluate its performance using appropriate methods.
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+The conclusions will be based on the results obtained from the analysis.
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate. You need to create your virtual environment, also called a venv, and then activate it whenever you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+## Project Plan
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+The project will be developed collaboratively over four days.
 
-1. Choose **Venv** from the dropdown list.
+- **Day 1 – Project setup and data preparation:** Confirm the project objectives, obtain and inspect the dataset, and identify the variables required for analysis.
+- **Day 2 – Data analysis:** Clean the data where necessary, explore electricity consumption patterns and create initial visualisations.
+- **Day 3 – Visualisation and dashboard development:** Develop and test the selected visualisations or dashboard and investigate forecasting if feasible.
+- **Day 4 – Finalisation and presentation:** Review the findings, prepare recommendations, complete the documentation and showcase the final project.
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+The plan may be updated as the team progresses.
 
-1. **DO NOT** click the box next to `requirements.txt`; you need to complete additional steps before installing your dependencies. Click **OK**.
+## The rationale to map the business requirements to the Data Visualisations
 
-1. You will see a `.venv` folder appear in the file explorer pane, indicating that the virtual environment has been created.
+The team will select visualisations that help answer the project questions.
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
+- **Electricity consumption over time:** A line chart can show changes in consumption and help identify trends.
+- **Comparison of consumption across periods:** A bar chart can compare consumption across relevant time periods, where appropriate.
+- **Relationships between variables:** A scatter plot or correlation heatmap may be used if the available variables support meaningful comparisons.
+- **Forecasting future consumption:** If forecasting is implemented, a line chart may compare actual consumption with predicted values.
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+The final visualisations will be documented after the data analysis has been completed.
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
+## Analysis techniques used
 
- ```console
- pip3 install -r requirements.txt
- ```
+The team plans to use appropriate data analysis techniques, which may include:
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
+- Data inspection to understand the dataset.
+- Data cleaning to address missing values, incorrect data types or other data quality issues identified.
+- Exploratory data analysis to summarise the data and identify patterns.
+- Time-based analysis to examine changes in electricity consumption.
+- Data visualisation to communicate findings.
+- Forecasting, if feasible, to investigate future electricity consumption.
 
-1. Click the **Kernel** button, then choose **Python Environments**.
+This section will be updated to reflect the techniques actually used in the project.
 
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
+## Ethical considerations (optional)
 
-```console
-! python --version
-```
+The team will acknowledge the original dataset source and interpret the results responsibly. Findings and recommendations will be based on the available evidence.
 
-## Deployment Reminders
+The team will also explain relevant data limitations and avoid presenting forecasts as guaranteed outcomes.
 
-* The `.python-version`, `.slugignore`, `Procfile` and `setup.sh` files are necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack, currently supported version that most closely matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
+## Dashboard Design (optional)
 
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+The team intends to communicate the main findings through clear and accessible visualisations. An interactive dashboard may be developed, depending on the tools selected and the progress made.
+
+The final dashboard design and features will be documented once they have been implemented.
+
+## Unfixed Bugs
+
+Any unresolved issues discovered during development and testing will be recorded in this section.
+
+Current status: To be updated as the project progresses.
+
+## Development Roadmap
+
+The planned development stages are:
+
+1. Inspect the dataset and understand its structure.
+2. Prepare the data for analysis.
+3. Explore electricity consumption patterns.
+4. Develop visualisations that address the business requirements.
+5. Investigate forecasting, if feasible.
+6. Test the final visualisations or dashboard.
+7. Document the findings, recommendations and limitations.
+
+## Deployment (optional)
+
+Deployment information will be added if the team publishes the final dashboard or application online.
+
+**Application link:** To be added if deployment is completed.
+
+## Main Data Analysis Libraries
+
+The final list will reflect the tools actually used. Potential Python libraries include:
+
+- **Pandas:** For loading, cleaning and analysing data.
+- **NumPy:** For numerical calculations.
+- **Matplotlib:** For creating charts.
+- **Seaborn:** For statistical visualisations, if required.
+- **Scikit-learn:** If a suitable forecasting or machine learning model is implemented.
+- **Streamlit:** If the team develops a Streamlit dashboard.
+
+## Credits (Content and Media)
+
+The dataset is sourced from Kaggle: "Electric Power Consumption Dataset" (https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set).
+
+Any additional resources, tools or external materials used will be acknowledged where appropriate.
+
+## Acknowledgements (optional)
+
+We acknowledge the contributions of our group members and the learning resources provided through the Code Institute Data Analytics with AI programme.
+
+
+
+
+
+
+
+
+
+
+
+
+
