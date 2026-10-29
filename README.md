@@ -293,11 +293,13 @@ Any additional tutorials, external code, dashboard resources or AI tools that ma
 
 ## Acknowledgements
 
-We would like to thank Code Institute for providing the hackathon framework and learning resources that guided our project.
+Acknowledgements
 
-We also acknowledge our teammates for their collaboration, contributions and shared commitment throughout the project. Working together has allowed us to combine our skills in data preparation, exploratory analysis, statistical testing, visualisation and documentation.
+We would like to thank the following for their contributions and support throughout the WattWise Energy Analytics project:
 
-We recognise the support of our instructors and peers in helping us develop our analytical thinking, technical skills and understanding of data-driven problem-solving.
-
-This project represents a collaborative learning experience in which we have applied data analytics methods to a real-world household electricity consumption dataset.
+- Dataset Provider: We thank the University of California, Irvine (UCI) Machine Learning Repository for making the Individual Household Electric Power Consumption dataset available for research and analysis. We accessed the dataset through Kaggle.
+- Code Institute: We appreciate Code Institute for providing the project brief, learning resources, and guidance that supported our learning throughout this group project.
+- Our Team: We thank all team members for their collaboration, contributions, and shared effort in completing this project.
+- Tools and Technologies: We acknowledge Python, Pandas, NumPy, Matplotlib, Jupyter Notebook, and other tools used to prepare, analyse, and visualise the data.
+- AI Assistance: We acknowledge the use of AI tools, where applicable, to support learning, problem-solving, documentation, and data storytelling. All outputs were reviewed by the team.
 
