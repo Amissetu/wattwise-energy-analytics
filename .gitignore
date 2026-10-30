@@ -11,3 +11,7 @@ kaggle.json
 .venv/
 raw_data_household_power_consumption.txt
 temp.zip
+ydata-profiling==4.12.0
+yellowbrick==1.5
+Pillow==10.0.1
+ppscore==1.1.0
